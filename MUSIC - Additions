@@ -1,0 +1,49 @@
+local Spooky = Instance.new("Sound")
+Spooky.Parent = workspace
+Spooky.Name = "1"
+Spooky.SoundId = "http://www.roblox.com/asset/?id=177276825"
+Spooky.Playing = false
+Spooky.Looped = true
+
+
+local Blinding = Instance.new("Sound")
+Blinding.Parent = workspace
+Blinding.Name = "2"
+Blinding.SoundId = "http://www.roblox.com/asset/?id=5033333442"
+Blinding.Playing = false
+Blinding.Looped = true
+
+local Polish = Instance.new("Sound")
+Polish.Parent = workspace
+Polish.Name = "3"
+Polish.SoundId = "http://www.roblox.com/asset/?id=5450766448"
+Polish.Playing = false
+Polish.Looped = true
+
+local DeadMen = Instance.new("Sound")
+DeadMen.Parent = workspace
+DeadMen.Name = "4"
+DeadMen.SoundId = "http://www.roblox.com/asset/?id=4878968482"
+DeadMen.Playing = false
+DeadMen.Looped = true
+
+local Ruler = Instance.new("Sound")
+Ruler.Parent = workspace
+Ruler.Name = "5"
+Ruler.SoundId = "http://www.roblox.com/asset/?id=6656651826"
+Ruler.Playing = false
+Ruler.Looped = true
+
+local Head = Instance.new("Sound")
+Head.Parent = workspace
+Head.Name = "6"
+Head.SoundId = "http://www.roblox.com/asset/?id=5255122859"
+Head.Playing = false
+Head.Looped = true
+
+local Crazy = Instance.new("Sound")
+Crazy.Parent = workspace
+Crazy.Name = "7"
+Crazy.SoundId = "http://www.roblox.com/asset/?id=4639707594"
+Crazy.Playing = false
+Crazy.Looped = true
