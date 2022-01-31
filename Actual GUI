@@ -1,0 +1,139 @@
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Paranormal-UI-Repositories-v2/main/MUSIC%20-%20Additions"))()
+
+
+
+local GUI = Mercury:Create{
+    Name = "Paranormal UI",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Mercury.Themes.Dark,
+    Link = "https://paranormal.com/"
+}
+
+
+GUI:Notification{
+	Title = "Welcome!",
+	Text = "Paranormal UI is in Pre-Alpha",
+	Duration = 6,
+	Callback = function() end
+}
+
+
+local Tab = GUI:Tab{
+	Name = "Music",
+	Icon = "rbxassetid://8569322835"
+}
+
+
+
+
+
+------------------------------------------------------------------------------------------
+
+local MusicDropdown1 = Tab:Dropdown({
+    Name = "Music Selection 1",
+    StartingText = "Select...",
+    Items = {
+        {"Spooky Scary Skeletons", 1},
+        {"Blinding Lights", 2},
+        {"Polish Cow", 3}
+    },
+    Description = "Pick a song",
+    Callback = function(v)
+        
+        game.Workspace["1"].Playing = false
+game.Workspace["2"].Playing = false
+game.Workspace["3"].Playing = false
+game.Workspace["4"].Playing = false
+game.Workspace["5"].Playing = false
+game.Workspace["6"].Playing = false
+game.Workspace["7"].Playing = false
+
+game.Workspace[v].TimePosition = 0
+game.Workspace[v].Looped = true
+game.Workspace[v].Playing = true
+
+    end,
+})
+
+MusicDropdown1:AddItems({
+	{"Attack of the Dead Men", 4},
+	{"Ruler of Everything", 5}
+})
+
+
+
+
+
+
+
+local MusicDropdown2 = Tab:Dropdown({
+    Name = "Music Selection 2",
+    StartingText = "Select...",
+    Items = {
+        {"Put Your Head On My Shoulder", 6},
+        {"Crazy", 7},
+    },
+    Description = "First 2 are covers/remixes due to copyright",
+    Callback = function(v)
+        
+        game.Workspace["1"].Playing = false
+game.Workspace["2"].Playing = false
+game.Workspace["3"].Playing = false
+game.Workspace["4"].Playing = false
+game.Workspace["5"].Playing = false
+game.Workspace["6"].Playing = false
+game.Workspace["7"].Playing = false
+
+game.Workspace[v].TimePosition = 0
+game.Workspace[v].Looped = true
+game.Workspace[v].Playing = true
+
+    end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+local volume = Tab:slider{
+    Name = "Volume",
+    Default = 50,
+    Min = 0,
+    Max = 100,
+    Callback = function(v)
+    game.Workspace["1"].Volume = (v)/100
+    game.Workspace["2"].Volume = (v)/100
+    game.Workspace["3"].Volume = (v)/100
+    game.Workspace["4"].Volume = (v)/100
+    game.Workspace["5"].Volume = (v)/100
+    game.Workspace["6"].Volume = (v)/100
+    game.Workspace["7"].Volume = (v)/100
+end}
+
+
+
+Tab:Button{
+	Name = "Stop All Music",
+	Description = "Forces the music to stop (NOT PAUSE)",
+	Callback = function() 
+	    game.Workspace["1"].Playing = false
+game.Workspace["2"].Playing = false
+game.Workspace["3"].Playing = false
+game.Workspace["4"].Playing = false
+game.Workspace["5"].Playing = false
+game.Workspace["6"].Playing = false
+game.Workspace["7"].Playing = false
+	    end
+}
+
+------------------------------------------------------------------------------------------
+
