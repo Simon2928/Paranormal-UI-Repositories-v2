@@ -48,7 +48,7 @@ game.Workspace["6"].Playing = false
 game.Workspace["7"].Playing = false
 
 game.Workspace["connection"].TimePosition = 0
-game.Workspace["connection"].Volume = 150
+game.Workspace["connection"].Volume = 75
 game.Workspace["connection"].Playing = true
 
 wait(0.5)
