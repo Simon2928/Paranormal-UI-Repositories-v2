@@ -1,0 +1,7 @@
+local prompt = loadstring(game:HttpGet('https://pastebin.com/raw/gbukRdzm', true))()
+prompt.createPrompt("Notification", "Paranormal UI v1.1", "Okay", true, function(close)
+      print("Button Clicked")
+      close()
+      wait(0.5)
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Paranormal-UI-Repositories-v2/main/Actual%20GUI"))()
+end) -- prompt.createPrompt(title text, message text, button text, blurred, button click callback)  
