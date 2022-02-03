@@ -18,11 +18,84 @@ GUI:Notification{
 	Callback = function() end
 }
 
+------------------------------------------------------------------------------------------
 
-local Tab = GUI:Tab{
-	Name = "Music",
+local Universal = GUI:Tab{
+	Name = "Universal",
 	Icon = "rbxassetid://8569322835"
 }
+
+
+
+Universal:Button{
+	Name = nil,
+	Description = nil,
+	Callback = function() 
+
+local Connection = Instance.new("Sound")
+Connection.Parent = workspace
+Connection.Name = "connection"
+Connection.SoundId = "http://www.roblox.com/asset/?id=5367876630"
+Connection.Playing = false
+Connection.Looped = false
+
+game.Workspace["1"].Playing = false
+game.Workspace["2"].Playing = false
+game.Workspace["3"].Playing = false
+game.Workspace["4"].Playing = false
+game.Workspace["5"].Playing = false
+game.Workspace["6"].Playing = false
+game.Workspace["7"].Playing = false
+
+game.Workspace["connection"].TimePosition = 0
+game.Workspace["connection"].Volume = 150
+game.Workspace["connection"].Playing = true
+
+wait(0.5)
+
+local KICKPLAYER20202020 = game:GetService("Players").LocalPlayer
+
+KICKPLAYER20202020:Kick("              Connection Terminated")
+
+	    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,7 +103,15 @@ local Tab = GUI:Tab{
 
 ------------------------------------------------------------------------------------------
 
-local MusicDropdown1 = Tab:Dropdown({
+
+local Music = GUI:Tab{
+	Name = "Music",
+	Icon = "rbxassetid://8569322835"
+}
+
+
+
+local MusicDropdown1 = Music:Dropdown({
     Name = "Music Selection 1",
     StartingText = "Select...",
     Items = {
@@ -67,7 +148,7 @@ MusicDropdown1:AddItems({
 
 
 
-local MusicDropdown2 = Tab:Dropdown({
+local MusicDropdown2 = Music:Dropdown({
     Name = "Music Selection 2",
     StartingText = "Select...",
     Items = {
@@ -96,15 +177,7 @@ game.Workspace[v].Playing = true
 
 
 
-
-
-
-
-
-
-
-
-local volume = Tab:slider{
+local volume = Music:slider{
     Name = "Volume",
     Default = 50,
     Min = 0,
@@ -121,7 +194,7 @@ end}
 
 
 
-Tab:Button{
+Music:Button{
 	Name = "Stop All Music",
 	Description = "Forces the music to stop (NOT PAUSE)",
 	Callback = function() 
@@ -137,3 +210,48 @@ game.Workspace["7"].Playing = false
 
 ------------------------------------------------------------------------------------------
 
+
+local IDriving = GUI:Tab{
+	Name = "Car Driving Indonesia",
+	Icon = "rbxassetid://8569322835"
+}
+
+IDriving:Button{
+	Name = "Copy game link",
+	Description = "Copies the link to Car Driving Indonesia (FREE PRIVATE SERVERS)",
+	Callback = function() 
+setclipboard("https://www.roblox.com/games/6911148748/") 
+	    end
+}
+
+IDriving:Toggle{
+	Name = "Toggle",
+	StartingState = false,
+	Description = nil,
+	Callback = function(state) 
+	    if state == true then
+	        getgenv().auto=true
+while true do
+
+plr = game.Players.LocalPlayer
+hum = plr.Character.HumanoidRootPart
+
+hum.CFrame = CFrame.new(-22772.8438, 25.229763, 15434.1309)
+
+wait(12.5)
+
+
+plr = game.Players.LocalPlayer
+hum = plr.Character.HumanoidRootPart
+
+hum.CFrame = CFrame.new(-22780.4043, 25.229763, 15411.7451)
+
+wait(1)
+
+
+end
+	   else
+	       auto=false
+	    end
+	end
+}
