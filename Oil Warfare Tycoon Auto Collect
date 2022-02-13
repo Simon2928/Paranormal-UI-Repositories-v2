@@ -1,0 +1,132 @@
+local tt = game.Players.LocalPlayer
+print(tt.Name)
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Alpha") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Alpha.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-934.875122, 75.4884949, 631.275635))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-934.875122, 75.4884949, 641.275635))
+        wait(3.5)
+    else
+        print("Player does not own ALPHA")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Alpha") == nil then
+    print("ALPHA does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Bravo") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Bravo.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1321.24902, 71.3654938, 734.802368))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1321.24902, 71.3654938, 744.802368))
+        wait(3.5)
+    else
+        print("Player does not own BRAVO")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Bravo") == nil then
+    print("BRAVO does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Charlie") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Charlie.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1688.59473, 48.9614716, 909.349792))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1688.59473, 48.9614716, 915.349792))
+        wait(3.5)
+    else
+        print("Player does not own CHARLIE")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Charlie") == nil then
+    print("CHARLIE does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Delta") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Delta.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1995.46362, 47.1154976, 576.989868))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1995.46362, 47.1154976, 566.989868))
+        wait(3.5)
+    else
+        print("Player does not own DELTA")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Delta") == nil then
+    print("DELTA does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Echo") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Echo.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1609.08948, 61.7215004, 473.463135))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1609.08948, 61.7215004, 465.463135))
+        wait(3.5)
+    else
+        print("Player does not own ECHO")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Echo") == nil then
+    print("ECHO does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Foxtrot") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Foxtrot.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1222.71497, 68.2161102, 369.93631))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-1222.71497, 68.2161102, 364.93631))
+        wait(3.5)
+    else
+        print("Player does not own FOXTROT")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Foxtrot") == nil then
+    print("FOXTROT does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Kilo") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Kilo.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-258.484344, 71.7445068, 55.3113022))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-268.484344, 71.7445068, 55.3113022))
+        wait(3.5)
+    else
+        print("Player does not own KILO")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Kilo") == nil then
+    print("KILO does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Lima") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Lima.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-127.970963, 72.3985062, -331.307404))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(-137.970963, 72.3985062, -331.307404))
+        wait(3.5)
+    else
+        print("Player does not own LIMA")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Lima") == nil then
+    print("LIMA does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Omega") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Omega.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(188.217743, 84.7465057, -239.265808))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(188.217743, 84.7465057, -249.265808))
+        wait(3.5)
+    else
+        print("Player does not own OMEGA")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Omega") == nil then
+    print("OMEGA does not exist")
+end
+
+if workspace.Tycoon.Tycoons:FindFirstChild("Zulu") ~= nil then
+    if game.Workspace.Tycoon.Tycoons.Zulu.Owner.Value.Name == tt.Name then
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(579.916016, 166.594498, -47.2930679))
+        wait(3.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):MoveTo(Vector3.new(590.501282, 169.349579, -57.0666542))
+        wait(3.5)
+    else
+        print("Player does not own ZULU")
+    end
+elseif workspace.Tycoon.Tycoons:FindFirstChild("Zulu") == nil then
+    print("ZULU does not exist")
+end
