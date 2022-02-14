@@ -1,3 +1,13 @@
+local prompt = loadstring(game:HttpGet('https://pastebin.com/raw/gbukRdzm', true))()
+prompt.createPrompt("title", "text", "button text", true, function(close)
+      print("Button Clicked")
+      close()
+end) -- prompt.createPrompt(title text, message text, button text, blurred, button click callback)  
+
+
+
+wait(2)
+
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Paranormal-UI-Repositories-v2/main/MUSIC%20-%20Additions"))()
 
@@ -48,10 +58,13 @@ game.Workspace["6"].Playing = false
 game.Workspace["7"].Playing = false
 
 game.Workspace["connection"].TimePosition = 0
-game.Workspace["connection"].Volume = 200/100
+wait(0.1)
+game.Workspace["connection"].Volume = 150/100
 game.Workspace["connection"].Playing = true
+wait(0.1)
+game.Workspace["connection"].Volume = 150/100
 
-wait(0.5)
+wait(0.3)
 
 local KICKPLAYER20202020 = game:GetService("Players").LocalPlayer
 
@@ -59,44 +72,6 @@ KICKPLAYER20202020:Kick("              Connection Terminated")
 
 	    end
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -255,3 +230,125 @@ end
 	    end
 	end
 }
+
+
+
+------------------------------------------------------------------------------------------
+local Trollge = GUI:Tab{
+	Name = "Trollge Universe Incident",
+	Icon = "rbxassetid://8569322835"
+}
+
+Trollge:Button{
+	Name = "Copy game link",
+	Description = "Copies the link to Trollge Universe Incident",
+	Callback = function() 
+setclipboard("https://www.roblox.com/games/7484534949/") 
+	    end
+}
+
+Trollge:Toggle{
+	Name = "Toggle",
+	StartingState = false,
+	Description = nil,
+	Callback = function(state) 
+	    if state == true then
+	        getgenv().auto=true
+while true do
+
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.chests.Chest_p.CFrame
+wait(0.00001)
+for i,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,0)
+end
+end
+wait(0.00001)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame  = CFrame.new(-514.099915, -0.578125, 352.588654)
+end
+
+end
+	   else
+	       auto=false
+	    end
+	end
+}
+
+
+
+------------------------------------------------------------------------------------------
+local Oil = GUI:Tab{
+	Name = "Oil Warfare Tycoon",
+	Icon = "rbxassetid://8569322835"
+}
+
+
+Oil:Toggle{
+	Name = "Toggle",
+	StartingState = false,
+	Description = nil,
+	Callback = function(state) 
+	    if state == true then
+	        _G.loop = true
+	        while _G.loop do
+
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Paranormal-UI-Repositories-v2/main/Oil%20Warfare%20Tycoon%20Auto%20Collect"))()
+
+	        end
+	   else
+	       _G.loop = false
+	    end
+	end
+}
+
+local notifyamount = 1000000
+
+local volume = Oil:slider{
+    Name = "SELECT NOTIFY NUMBER",
+    Default = 1000000,
+    Min = 0,
+    Max = 10000000,
+    Callback = function(v)
+    notifyamount = (v)
+end}
+
+
+Oil:Toggle{
+	Name = "Notify if number is above SELECT NUMBER",
+	StartingState = false,
+	Description = "Used with auto collect",
+	Callback = function(state) 
+	    if state == true then
+	        _G.loop = true
+	        while _G.loop do
+	            wait(0.01)
+	        if game:GetService("Players").w5fq.leaderstats.Cash.Value > notifyamount then
+	        
+
+                local NotificationSound = Instance.new("Sound")
+NotificationSound.Parent = game.ReplicatedFirst
+NotificationSound.Name = "NOTIFICATIONSOUND"
+NotificationSound.SoundId = "http://www.roblox.com/asset/?id=6670771770"
+NotificationSound.Playing = true
+NotificationSound.Looped = false
+NotificationSound.Volume = 100/100
+                wait(4)
+                game.ReplicatedFirst.NOTIFICATIONSOUND:Destroy()
+                wait(1)
+                print("yey")
+                else
+                    print("non")
+                    wait(1)
+	        end
+            
+            end
+	   else
+	       _G.loop = false
+	       wait(0.01)
+	       game.Workspace.NOTIFICATIONSOUND:Destroy()
+	   end
+end
+}
+
+
