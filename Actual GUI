@@ -1,13 +1,3 @@
-local prompt = loadstring(game:HttpGet('https://pastebin.com/raw/gbukRdzm', true))()
-prompt.createPrompt("title", "text", "button text", true, function(close)
-      print("Button Clicked")
-      close()
-end) -- prompt.createPrompt(title text, message text, button text, blurred, button click callback)  
-
-
-
-wait(2)
-
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Simon2928/Paranormal-UI-Repositories-v2/main/MUSIC%20-%20Additions"))()
 
